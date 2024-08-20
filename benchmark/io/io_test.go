@@ -93,8 +93,8 @@ func TestIO(t *testing.T) {
 
 	log.SetFlags(log.LstdFlags | log.Llongfile) // 设置日志标志
 
-	sg := make(chan os.Signal)                                          // 创建一个通道，用于接收系统信号
-	signal.Notify(sg, syscall.SIGINT, syscall.SIGQUIT, syscall.SIGKILL) // 监听系统信号
+	sg := make(chan os.Signal, 1)                                       // 创建一个带缓冲的通道，用于接收系统信号
+	signal.Notify(sg, syscall.SIGINT, syscall.SIGQUIT, syscall.SIGTERM) // 监听系统信号
 
 	<-sg // 等待接收信号
 
