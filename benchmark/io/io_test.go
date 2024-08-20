@@ -1,6 +1,3 @@
-//go:build benchmark
-// +build benchmark
-
 package io
 
 import (
