@@ -10,6 +10,7 @@ require (
 	github.com/pingcap/check v0.0.0-20200212061837-5e12011dc712 // indirect
 	github.com/pingcap/errors v0.11.4 // indirect
 	github.com/pingcap/log v0.0.0-20210625125904-98ed8e2eb1c7 // indirect
+	github.com/ramya-rao-a/go-outline v0.0.0-20210608161538-9736a4bde949 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/urfave/cli v1.22.5 // indirect
 	go.uber.org/atomic v1.8.0 // indirect
